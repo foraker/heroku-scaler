@@ -4,7 +4,7 @@ The Heroku Scaler gem allows for free scaling of Heroku web dynos.
 It exposes 3 simple rake tasks that can be called from the free [Heroku
 Scheduler](https://elements.heroku.com/addons/scheduler).
 
-This is perfect for applications that see heavy use during known times of the day or week.  For example, we have some customers with business systems that see 99.9% of their traffic during regular business hours on the weekdays.  Since Heroku charges for dynos based on the number of seconds the dynos are running, scaling down application dynos during off-peak times can mean big savings.  Running your larger dyno setup during the 25% of normal business hours can save a bundle!  There are other tools that purport to do this but they often charge money and have, in our experience, been poorly supported.
+This is perfect for applications that see heavy use during known times of the day or week.  For example, we have some customers with business systems that see 99.9% of their traffic during regular business hours on the weekdays.  Since Heroku charges for dynos based on the number of seconds the dynos are running, scaling down application dynos during off-peak times can mean big savings.  Running your larger dyno setup only during business hours - which is only 25% of the time - can save a bundle!  There are other tools that purport to do this but they often charge money and have, in our experience, been poorly supported.
 
 ## Commands
 

@@ -1,7 +1,5 @@
 module HerokuScaler
   class Config
-    attr_reader :settings
-
     def initialize(settings=ENV)
       @settings=settings
     end
@@ -29,5 +27,8 @@ module HerokuScaler
     def auth_token
       settings["SCALE_OAUTH_TOKEN"]
     end
+
+    private
+    attr_reader :settings
   end
 end
