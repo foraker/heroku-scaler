@@ -22,13 +22,13 @@ module HerokuScaler
       web_scale(small_dyno_type, small_dyno_count)
     end
 
-    def weekday?
-      (1..5).include?(Date.today.cwday)
-    end
-
     private
 
     attr_reader :config, :platform_api
+
+    def weekday?
+      (1..5).include?(Date.today.cwday)
+    end
 
     def_delegators :config,
       :app_name,

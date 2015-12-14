@@ -1,1 +1,1 @@
-require 'heroku-scaler/railtie' if defined?(Rake)
+require 'heroku-scaler/railtie' if defined?(Rails)
