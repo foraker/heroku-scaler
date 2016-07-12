@@ -41,7 +41,7 @@ All of these configuration options can be set through the Heroku application con
 
   add the gem to your `Gemfile`
 
-  `gem "heroku_scaler"`
+  `gem "heroku-scaler"`
 
   User Bundler to install the gem in your project
 
@@ -57,11 +57,11 @@ All of these configuration options can be set through the Heroku application con
 
   ```shell
   heroku config:set SCALE_APP_NAME=my-cool-app
-  heroku config:set SCALE_BIG_DYNO_COUNT=2
-  heroku config:set SCALE_BIG_DYNO_TYPE=Standard-1X
+  heroku config:set SCALE_BIG_DYNO_COUNT=3
+  heroku config:set SCALE_BIG_DYNO_TYPE=Standard-2X
   heroku config:set SCALE_OAUTH_TOKEN=heroku_api_key_here
-  heroku config:set SCALE_SMALL_DYNO_COUNT=2
-  heroku config:set SCALE_SMALL_DYNO_TYPE=Standard-2X
+  heroku config:set SCALE_SMALL_DYNO_COUNT=1
+  heroku config:set SCALE_SMALL_DYNO_TYPE=Standard-1X
   ```
 1. Install the [Heroku
 Scheduler](https://elements.heroku.com/addons/scheduler) into your Heroku application.
